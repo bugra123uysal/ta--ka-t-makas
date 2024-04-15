@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>taş mı makas mı kağıtmı</title>
+  <style>
+    #gor{
+      position: absolute;
+      top: 110px;
+      left: 600px;
+      height: 200px;
+      width: 200px;
+    }
+    
+#xx{
+  display: none;
+}
+/* button */
+#bbut{
+  
+  position: absolute;
+  bottom: 200px;
+  left: 630px;
+  height: 30px;
+  width: 150px;
+}
+   
+  </style>
+</head>
+<body>
+  <button id="bbut" onclick="bb()"> taş kağıt makas</button>
+  
+  <img  id="gor" src="c:\Users\buğra\Desktop\beyaazzzkagııttt.jpeg" alt="">
+
+  <div id="xx" >   
+
+    <img id="a"  class="re"  src="c:\Users\buğra\Desktop\mmks.jpg" alt="">
+    <img  id="b" class="re" src="c:\Users\buğra\Desktop\tasss.jpg" alt="">
+    <img  id="c" class="re" src="c:\Users\buğra\Desktop\beyaazzzkagııttt.jpeg" alt="">
+    
+  </div>
+
+
+
+  <script>
+
+
+    
+
+function  bb() {
+      var rsm= new Array()
+      const tkm=[Math.floor(Math.random()*3)+1];
+        rsm[1]=document.getElementById("a").src;
+        rsm[2]= document.getElementById("b").src;
+        rsm[3]=document.getElementById("c").src;
+       
+
+        var  ııı=  document.getElementById("gor");
+
+ııı.src=rsm[tkm];
+
+
+
+
+
+    }
+   
+  </script>
+  
+</body>
+</html>
